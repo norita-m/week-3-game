@@ -1,0 +1,38 @@
+body {
+	background: url(../images/flowerIllustrations.png);
+	font-family: 'Roboto', sans-serif;
+	color: #3e4641;
+}
+
+.header {
+	text-align: center;
+	color: #3e4641;
+	margin-bottom: 100px;
+}
+
+h1 {
+	font-size: 4.5em;
+	font-family: 'Arima Madurai', cursive;
+}
+
+h2 {
+	letter-spacing: 3px;
+	margin: -50px 0px 20px 0px;
+	color: #f07a95;
+	text-align: center;
+}
+
+hr {
+	width: 80%;
+}
+
+.container {
+	background-color: #faf7db;
+	padding: 0px 30px 30px 30px;
+	max-width: 50%;
+	margin: auto;
+	margin-top: 5%;
+	opacity: 0.9;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*box-shadow: 5px 5px 5px grey;*/
+}

@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Hangman</title>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Roboto" rel="stylesheet">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
 </head>
 <body>
 
-	<h1>Hangman</h1>
-
-	<h2>Press any key to get started!</h2>
-
-	<p>Wins:</p>
-
-	<p>Number of guesses remaining:</p>
+<!--HEADER-->
+<div class="container">
+	<div class="header">
+		<h1>Hangman</h1>
+		<h2>{ ALL ABOUT FLOWERS }</h2>
+		<hr>
+		<h3>Can you guess the top ten flowers sold in the US? Press any key to start!</h3>
+	</div>
 	
-	<p>Letters already guessed:</p>
+	<!--BODY-->
+	<div class="gamebody">
+		<!--placeholder for guessed letters / this ID will be called in JS -->
+		<h2 id="wordToGuess">_ _ _ _ _</h2>
+	</div>
 
+	<!-- holds the letters already guessed -->
+	<div class="gamebody">
+		<strong>Letters already guessed:</strong> <span id="wrongGuesses"></span>
+	</div>
+	<!-- remaining guesses -->
+	<div class="gamebody">
+		<strong>Remaining Guesses:</strong> <span id="remainingGuess">9</span>
+	</div>
+	<!-- win counter -->
+	<div class="gamebody">
+		<strong>Wins:</strong> <span id="winCount"></span>
+	</div>
+	<!-- loss counter -->
+	<div class="gamebody">
+		<strong>Losses:</strong> <span id="lossCount"></span>
+	</div>
+</div>
 
-
-
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
